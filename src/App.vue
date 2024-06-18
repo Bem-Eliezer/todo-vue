@@ -45,7 +45,7 @@ const getTarefasFiltradas = () => {
   }
 }
 
-const cadastratarefa = () => {
+const cadastraTarefa = () => {
   const tarefaNova = {
     titulo: estado.tarefaTemp,
     finalizada: false,
@@ -54,8 +54,8 @@ const cadastratarefa = () => {
   estado.tarefas.push(tarefaNova);
   estado.tarefaTemp = '';
 }
-
 </script>
+
 <template>
   <div class="container">
     <Cabecalho :tarefas-pendentes="getTarefasPendentes().length"/>
